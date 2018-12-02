@@ -13,6 +13,9 @@
 		2881307621B4197400D480A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2881307421B4197400D480A2 /* LaunchScreen.storyboard */; };
 		2881308121B4197400D480A2 /* CurrencyConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2881308021B4197400D480A2 /* CurrencyConverterTests.swift */; };
 		2881309A21B41F4800D480A2 /* CurrencyList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2881309521B41F4800D480A2 /* CurrencyList.storyboard */; };
+		2881309C21B4219900D480A2 /* CurrencyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2881309B21B4219900D480A2 /* CurrencyListViewModel.swift */; };
+		2881309F21B4269E00D480A2 /* CurrencyListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2881309E21B4269E00D480A2 /* CurrencyListTableViewCell.swift */; };
+		288130A121B4277300D480A2 /* CurrencyListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288130A021B4277300D480A2 /* CurrencyListTableViewCell.xib */; };
 		288130AB21B431F300D480A2 /* NSObject+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288130AA21B431F300D480A2 /* NSObject+Additions.swift */; };
 		288130AD21B4331700D480A2 /* UITableView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288130AC21B4331700D480A2 /* UITableView+Additions.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +41,9 @@
 		2881308021B4197400D480A2 /* CurrencyConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterTests.swift; sourceTree = "<group>"; };
 		2881308221B4197400D480A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2881309621B41F4800D480A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CurrencyList.storyboard; sourceTree = "<group>"; };
+		2881309B21B4219900D480A2 /* CurrencyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModel.swift; sourceTree = "<group>"; };
+		2881309E21B4269E00D480A2 /* CurrencyListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListTableViewCell.swift; sourceTree = "<group>"; };
+		288130A021B4277300D480A2 /* CurrencyListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyListTableViewCell.xib; sourceTree = "<group>"; };
 		288130AA21B431F300D480A2 /* NSObject+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Additions.swift"; sourceTree = "<group>"; };
 		288130AC21B4331700D480A2 /* UITableView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +117,7 @@
 		2881309221B41F4800D480A2 /* CurrencyList */ = {
 			isa = PBXGroup;
 			children = (
+				2881309D21B4265A00D480A2 /* Cells */,
 				2881309821B41F4800D480A2 /* Models */,
 				2881309721B41F4800D480A2 /* Networking */,
 				2881309421B41F4800D480A2 /* Storyboard */,
@@ -123,6 +130,7 @@
 		2881309321B41F4800D480A2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2881309B21B4219900D480A2 /* CurrencyListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -155,6 +163,15 @@
 				2881306D21B4197400D480A2 /* CurrencyListViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2881309D21B4265A00D480A2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2881309E21B4269E00D480A2 /* CurrencyListTableViewCell.swift */,
+				288130A021B4277300D480A2 /* CurrencyListTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		288130A221B4285200D480A2 /* Extensions */ = {
@@ -249,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288130A121B4277300D480A2 /* CurrencyListTableViewCell.xib in Resources */,
 				2881307621B4197400D480A2 /* LaunchScreen.storyboard in Resources */,
 				2881309A21B41F4800D480A2 /* CurrencyList.storyboard in Resources */,
 				2881307321B4197400D480A2 /* Assets.xcassets in Resources */,
@@ -270,8 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				288130AB21B431F300D480A2 /* NSObject+Additions.swift in Sources */,
+				2881309F21B4269E00D480A2 /* CurrencyListTableViewCell.swift in Sources */,
 				2881306E21B4197400D480A2 /* CurrencyListViewController.swift in Sources */,
 				288130AD21B4331700D480A2 /* UITableView+Additions.swift in Sources */,
+				2881309C21B4219900D480A2 /* CurrencyListViewModel.swift in Sources */,
 				2881306C21B4197400D480A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
