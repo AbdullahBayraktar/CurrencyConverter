@@ -13,6 +13,8 @@
 		2881307621B4197400D480A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2881307421B4197400D480A2 /* LaunchScreen.storyboard */; };
 		2881308121B4197400D480A2 /* CurrencyConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2881308021B4197400D480A2 /* CurrencyConverterTests.swift */; };
 		2881309A21B41F4800D480A2 /* CurrencyList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2881309521B41F4800D480A2 /* CurrencyList.storyboard */; };
+		288130AB21B431F300D480A2 /* NSObject+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288130AA21B431F300D480A2 /* NSObject+Additions.swift */; };
+		288130AD21B4331700D480A2 /* UITableView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288130AC21B4331700D480A2 /* UITableView+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		2881308021B4197400D480A2 /* CurrencyConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterTests.swift; sourceTree = "<group>"; };
 		2881308221B4197400D480A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2881309621B41F4800D480A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CurrencyList.storyboard; sourceTree = "<group>"; };
+		288130AA21B431F300D480A2 /* NSObject+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Additions.swift"; sourceTree = "<group>"; };
+		288130AC21B4331700D480A2 /* UITableView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				2881306B21B4197400D480A2 /* AppDelegate.swift */,
-				2881308B21B41EC100D480A2 /* Features */,
 				2881307221B4197400D480A2 /* Assets.xcassets */,
-				2881307421B4197400D480A2 /* LaunchScreen.storyboard */,
+				288130A221B4285200D480A2 /* Extensions */,
+				2881308B21B41EC100D480A2 /* Features */,
 				2881307721B4197400D480A2 /* Info.plist */,
+				2881307421B4197400D480A2 /* LaunchScreen.storyboard */,
 			);
 			path = CurrencyConverter;
 			sourceTree = "<group>";
@@ -150,6 +155,15 @@
 				2881306D21B4197400D480A2 /* CurrencyListViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		288130A221B4285200D480A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				288130AA21B431F300D480A2 /* NSObject+Additions.swift */,
+				288130AC21B4331700D480A2 /* UITableView+Additions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288130AB21B431F300D480A2 /* NSObject+Additions.swift in Sources */,
 				2881306E21B4197400D480A2 /* CurrencyListViewController.swift in Sources */,
+				288130AD21B4331700D480A2 /* UITableView+Additions.swift in Sources */,
 				2881306C21B4197400D480A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
