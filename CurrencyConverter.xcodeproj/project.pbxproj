@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		284C6E0F21BB113100683F3A /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C6E0E21BB113100683F3A /* String+Additions.swift */; };
 		284C6E1321BD8FF900683F3A /* CurrenciesDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C6E1221BD8FF900683F3A /* CurrenciesDataController.swift */; };
 		284C6E1521BD903B00683F3A /* CurrenciesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C6E1421BD903B00683F3A /* CurrenciesDataProvider.swift */; };
 		284C6E1C21BD984300683F3A /* CurrencyListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C6E1B21BD984300683F3A /* CurrencyListResponse.swift */; };
 		2874737B21B485BC00A16844 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874737A21B485BC00A16844 /* ExchangeRate.swift */; };
+		2874737D21B493EC00A16844 /* UITextField+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874737C21B493EC00A16844 /* UITextField+Additions.swift */; };
 		2881306C21B4197400D480A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2881306B21B4197400D480A2 /* AppDelegate.swift */; };
 		2881306E21B4197400D480A2 /* CurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2881306D21B4197400D480A2 /* CurrencyListViewController.swift */; };
 		2881307321B4197400D480A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2881307221B4197400D480A2 /* Assets.xcassets */; };
@@ -37,10 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		284C6E0E21BB113100683F3A /* String+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
 		284C6E1221BD8FF900683F3A /* CurrenciesDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesDataController.swift; sourceTree = "<group>"; };
 		284C6E1421BD903B00683F3A /* CurrenciesDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesDataProvider.swift; sourceTree = "<group>"; };
 		284C6E1B21BD984300683F3A /* CurrencyListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyListResponse.swift; sourceTree = "<group>"; };
 		2874737A21B485BC00A16844 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		2874737C21B493EC00A16844 /* UITextField+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Additions.swift"; sourceTree = "<group>"; };
 		2881306821B4197400D480A2 /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2881306B21B4197400D480A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2881306D21B4197400D480A2 /* CurrencyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 			children = (
 				288130AA21B431F300D480A2 /* NSObject+Additions.swift */,
 				288130AC21B4331700D480A2 /* UITableView+Additions.swift */,
+				2874737C21B493EC00A16844 /* UITextField+Additions.swift */,
+				284C6E0E21BB113100683F3A /* String+Additions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -329,9 +335,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284C6E0F21BB113100683F3A /* String+Additions.swift in Sources */,
 				288130AB21B431F300D480A2 /* NSObject+Additions.swift in Sources */,
 				2881309F21B4269E00D480A2 /* CurrencyListTableViewCell.swift in Sources */,
 				284C6E1321BD8FF900683F3A /* CurrenciesDataController.swift in Sources */,
+				2874737D21B493EC00A16844 /* UITextField+Additions.swift in Sources */,
 				2881306E21B4197400D480A2 /* CurrencyListViewController.swift in Sources */,
 				288130B021B436B500D480A2 /* NetworkManager.swift in Sources */,
 				288130AD21B4331700D480A2 /* UITableView+Additions.swift in Sources */,
