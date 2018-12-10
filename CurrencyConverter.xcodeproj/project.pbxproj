@@ -18,6 +18,7 @@
 		288130A121B4277300D480A2 /* CurrencyListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288130A021B4277300D480A2 /* CurrencyListTableViewCell.xib */; };
 		288130AB21B431F300D480A2 /* NSObject+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288130AA21B431F300D480A2 /* NSObject+Additions.swift */; };
 		288130AD21B4331700D480A2 /* UITableView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288130AC21B4331700D480A2 /* UITableView+Additions.swift */; };
+		288130B021B436B500D480A2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288130AF21B436B500D480A2 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		288130A021B4277300D480A2 /* CurrencyListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyListTableViewCell.xib; sourceTree = "<group>"; };
 		288130AA21B431F300D480A2 /* NSObject+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Additions.swift"; sourceTree = "<group>"; };
 		288130AC21B4331700D480A2 /* UITableView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Additions.swift"; sourceTree = "<group>"; };
+		288130AF21B436B500D480A2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				2881308B21B41EC100D480A2 /* Features */,
 				2881307721B4197400D480A2 /* Info.plist */,
 				2881307421B4197400D480A2 /* LaunchScreen.storyboard */,
+				288130AE21B436A200D480A2 /* Network */,
 			);
 			path = CurrencyConverter;
 			sourceTree = "<group>";
@@ -181,6 +184,14 @@
 				288130AC21B4331700D480A2 /* UITableView+Additions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		288130AE21B436A200D480A2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				288130AF21B436B500D480A2 /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +301,7 @@
 				288130AB21B431F300D480A2 /* NSObject+Additions.swift in Sources */,
 				2881309F21B4269E00D480A2 /* CurrencyListTableViewCell.swift in Sources */,
 				2881306E21B4197400D480A2 /* CurrencyListViewController.swift in Sources */,
+				288130B021B436B500D480A2 /* NetworkManager.swift in Sources */,
 				288130AD21B4331700D480A2 /* UITableView+Additions.swift in Sources */,
 				2881309C21B4219900D480A2 /* CurrencyListViewModel.swift in Sources */,
 				2881306C21B4197400D480A2 /* AppDelegate.swift in Sources */,
