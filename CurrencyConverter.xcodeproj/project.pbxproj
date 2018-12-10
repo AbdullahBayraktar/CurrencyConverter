@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		284C6E1C21BD984300683F3A /* CurrencyListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C6E1B21BD984300683F3A /* CurrencyListResponse.swift */; };
+		2874737B21B485BC00A16844 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874737A21B485BC00A16844 /* ExchangeRate.swift */; };
 		2881306C21B4197400D480A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2881306B21B4197400D480A2 /* AppDelegate.swift */; };
 		2881306E21B4197400D480A2 /* CurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2881306D21B4197400D480A2 /* CurrencyListViewController.swift */; };
 		2881307321B4197400D480A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2881307221B4197400D480A2 /* Assets.xcassets */; };
@@ -19,6 +21,7 @@
 		288130AB21B431F300D480A2 /* NSObject+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288130AA21B431F300D480A2 /* NSObject+Additions.swift */; };
 		288130AD21B4331700D480A2 /* UITableView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288130AC21B4331700D480A2 /* UITableView+Additions.swift */; };
 		288130B021B436B500D480A2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288130AF21B436B500D480A2 /* NetworkManager.swift */; };
+		288C558E21B736D300469013 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C558D21B736D300469013 /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		284C6E1B21BD984300683F3A /* CurrencyListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyListResponse.swift; sourceTree = "<group>"; };
+		2874737A21B485BC00A16844 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		2881306821B4197400D480A2 /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2881306B21B4197400D480A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2881306D21B4197400D480A2 /* CurrencyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +53,7 @@
 		288130AA21B431F300D480A2 /* NSObject+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Additions.swift"; sourceTree = "<group>"; };
 		288130AC21B4331700D480A2 /* UITableView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Additions.swift"; sourceTree = "<group>"; };
 		288130AF21B436B500D480A2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		288C558D21B736D300469013 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		284C6E1021BD8FD300683F3A /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				284C6E1B21BD984300683F3A /* CurrencyListResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
 		2881305F21B4197400D480A2 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +163,7 @@
 		2881309721B41F4800D480A2 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				284C6E1021BD8FD300683F3A /* Responses */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -156,6 +171,8 @@
 		2881309821B41F4800D480A2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2874737A21B485BC00A16844 /* ExchangeRate.swift */,
+				288C558D21B736D300469013 /* Currency.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -303,6 +320,9 @@
 				2881306E21B4197400D480A2 /* CurrencyListViewController.swift in Sources */,
 				288130B021B436B500D480A2 /* NetworkManager.swift in Sources */,
 				288130AD21B4331700D480A2 /* UITableView+Additions.swift in Sources */,
+				288C558E21B736D300469013 /* Currency.swift in Sources */,
+				2874737B21B485BC00A16844 /* ExchangeRate.swift in Sources */,
+				284C6E1C21BD984300683F3A /* CurrencyListResponse.swift in Sources */,
 				2881309C21B4219900D480A2 /* CurrencyListViewModel.swift in Sources */,
 				2881306C21B4197400D480A2 /* AppDelegate.swift in Sources */,
 			);
