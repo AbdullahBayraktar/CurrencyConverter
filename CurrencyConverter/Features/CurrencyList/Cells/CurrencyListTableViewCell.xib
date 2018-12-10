@@ -18,15 +18,48 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnh-mn-WqS">
-                        <rect key="frame" x="16" y="11" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnh-mn-WqS">
+                        <rect key="frame" x="16" y="11" width="307" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="75f-wV-0uW">
+                        <rect key="frame" x="339" y="7" width="20" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Ltm-UE-APT"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <action selector="textFieldEditingChanged:" destination="ilD-fc-cVh" eventType="editingChanged" id="s2t-gK-6pH"/>
+                            <action selector="textFieldEditingDidBegin:" destination="ilD-fc-cVh" eventType="editingDidBegin" id="LvE-sU-hqk"/>
+                        </connections>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hp-H6-0b9">
+                        <rect key="frame" x="339" y="7" width="20" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3Hp-H6-0b9" secondAttribute="trailing" constant="16" id="2ff-AS-DMf"/>
+                    <constraint firstItem="75f-wV-0uW" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Dnh-mn-WqS" secondAttribute="trailing" constant="16" id="JUW-6n-UJg"/>
+                    <constraint firstItem="Dnh-mn-WqS" firstAttribute="centerY" secondItem="m0A-uq-8ZD" secondAttribute="centerY" id="Lve-p0-KtE"/>
+                    <constraint firstItem="Dnh-mn-WqS" firstAttribute="leading" secondItem="m0A-uq-8ZD" secondAttribute="leading" constant="16" id="RDP-ye-EkT"/>
+                    <constraint firstItem="75f-wV-0uW" firstAttribute="centerY" secondItem="m0A-uq-8ZD" secondAttribute="centerY" id="ZIG-G3-Ob0"/>
+                    <constraint firstItem="3Hp-H6-0b9" firstAttribute="centerY" secondItem="75f-wV-0uW" secondAttribute="centerY" id="Zws-d5-2HL"/>
+                    <constraint firstItem="3Hp-H6-0b9" firstAttribute="leading" secondItem="Dnh-mn-WqS" secondAttribute="trailing" constant="16" id="hsu-bL-Qb4"/>
+                    <constraint firstItem="3Hp-H6-0b9" firstAttribute="height" secondItem="75f-wV-0uW" secondAttribute="height" id="oL6-6Y-Qga"/>
+                    <constraint firstAttribute="trailing" secondItem="75f-wV-0uW" secondAttribute="trailing" constant="16" id="y2v-6Y-ooz"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="amountTextField" destination="75f-wV-0uW" id="Z7R-5h-OMC"/>
+                <outlet property="amountTextFieldWidthConstraint" destination="Ltm-UE-APT" id="51X-pZ-8ev"/>
+                <outlet property="currencyCodeLabel" destination="Dnh-mn-WqS" id="NLe-fx-4uB"/>
+            </connections>
+            <point key="canvasLocation" x="-10" y="113"/>
         </tableViewCell>
     </objects>
 </document>
